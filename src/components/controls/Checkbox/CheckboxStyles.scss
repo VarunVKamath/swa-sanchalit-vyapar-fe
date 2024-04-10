@@ -1,0 +1,38 @@
+// .label {
+//   display: flex;
+//   align-items: center;
+//   cursor: pointer;
+//   padding: 5px 0;
+// }
+
+// .checkbox:checked + .iconWrapper {
+//   border-color: var(--green-button);
+
+//   .icon {
+//     opacity: 1;
+//   }
+// }
+
+// .icon {
+//   //font-size: 10px;
+//   //color: var(--green-button);
+//   opacity: 0;
+//   transform: translateX(-1px);
+
+//   &Wrapper {
+//     width: 16px;
+//     height: 16px;
+//     border: solid 1px #8f8f91;
+//     border-radius: 2px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
+
+// .text {
+//   user-select: none;
+//   font-size: 13px;
+//   color: var(--almost-black);
+//   margin-left: 9px;
+// }

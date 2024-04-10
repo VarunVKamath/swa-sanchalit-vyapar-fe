@@ -1,0 +1,135 @@
+.select_wrapper {
+  position: relative;
+  width: 100%;
+}
+.select {
+  &__placeholder {
+    color: #070707 !important;
+    opacity: 0.5;
+    font-size: 13px;
+    max-width: calc(100% - 4px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+      font-size: 11px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__dropDownIcon {
+    padding: 0 10px 0 5px;
+    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+      padding: 0 6px 0 3px;
+    }
+  }
+
+  &__label {
+    font-size: 12px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    line-height: normal;
+    margin-left: 6px;
+    display: block;
+    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+      font-size: 11px;
+    }
+  }
+
+  &__single-value {
+    font-family: Montserrat, sans-serif;
+    color: #070707 !important;
+    font-size: 13px;
+    padding: 3px 0;
+    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+      font-size: 11px;
+    }
+  }
+
+  &__control {
+    cursor: pointer !important;
+    min-height: 42px !important;
+    padding-left: 5px;
+    box-shadow: none !important;
+    transition: none !important;
+    border: solid 1px #cccccc !important;
+    border-radius: 4px;
+    @media screen and (max-width: 575px) {
+      height: 36px;
+      min-height: 36px !important;
+    }
+    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+      height: 36px;
+      min-height: 36px !important;
+    }
+
+    &--menu-is-open {
+      border-radius: 4px 4px 0 0 !important;
+      background-color: #f4f5f7 !important;
+      border: solid 1px var(--secondary) !important;
+    }
+  }
+
+  &__indicator-separator {
+    display: none;
+  }
+
+  &__clear-indicator {
+    color: hsl(0, 0%, 80%) !important;
+    cursor: pointer;
+  }
+
+  &__menu {
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    border-radius: 0 0 4px 4px !important;
+    margin: 0 !important;
+    width: auto !important;
+    top: calc(100% - 4px) !important;
+    left: 1px;
+    right: 1px;
+
+    &-list {
+      padding: 0 !important;
+    }
+  }
+
+  &__option {
+    cursor: pointer !important;
+    padding: 10px 0 10px 14px !important;
+    font-size: 13px !important;
+    letter-spacing: 0.14px;
+    color: #070707 !important;
+    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+      font-size: 11px !important;
+    }
+
+    &--is-focused {
+      background-color: #e0ece4 !important;
+    }
+
+    &--is-selected {
+      background-color: #e0ece4 !important;
+    }
+  }
+}
+
+.error {
+  .select__control {
+    border-color: rgba(255, 0, 28, 0.25) !important;
+    background-color: #fff3f5 !important;
+  }
+
+  &Text {
+    color: red;
+    text-transform: none;
+    position: absolute;
+    font-size: 10px;
+    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+      font-size: 9px;
+    }
+  }
+}

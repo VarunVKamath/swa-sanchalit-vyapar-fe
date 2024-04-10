@@ -1,0 +1,73 @@
+.header {
+  background-color: var(--primary);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  margin-left: 230px;
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    margin-left: 210px;
+  }
+  &_title {
+    color: var(--secondary);
+  }
+
+  &_nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 600px) {
+      height: 60px;
+    }
+    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+      height: 60px;
+    }
+    h2 {
+      padding-top: 5px;
+      margin-bottom: 0;
+      font-size: 28px;
+      font-weight: 600;
+      @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+        font-size: 25px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 18px;
+      }
+    }
+    .navbar-brand {
+      margin-right: 0;
+      .img {
+        -o-object-fit: contain;
+        object-fit: contain;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .circular_btn {
+    color: var(--primary);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    @media screen and (max-width: 600px) {
+      margin: 0 2px;
+    }
+    @media screen and (max-width: 350px) {
+      height: 35px;
+      width: 35px;
+    }
+  }
+  .sidenav_icon {
+    color: var(--secondary);
+    cursor: pointer;
+  }
+}

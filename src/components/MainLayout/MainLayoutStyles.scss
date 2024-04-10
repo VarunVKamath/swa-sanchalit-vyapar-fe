@@ -1,0 +1,8 @@
+.main {
+  min-height: calc(100vh - 96px);
+  //background-color: var(--light-grey);
+  background-color: #eaeaea;
+  @media screen and (max-width: 768px) {
+    min-height: calc(100vh - 80px);
+  }
+}

@@ -1,0 +1,217 @@
+.sidenav_wrapper {
+  width: 230px;
+  position: -webkit-sticky;
+  position: fixed;
+  background: #d7e3f5;
+  color: var(--primary) !important;
+  top: 0;
+  left: -300px;
+  z-index: 999;
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    width: 210px;
+  }
+
+  .navbar-light .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .img {
+      -o-object-fit: contain;
+      object-fit: contain;
+      width: 90%;
+      height: auto;
+    }
+  }
+
+  hr {
+    margin: 0.2rem 0 0.2rem;
+  }
+  .active {
+   // background: var(--secondary);
+    color: #000 !important;
+  }
+  &_navbar {
+    position: relative;
+    height: 100vh;
+    display: block;
+
+    .settings {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 78px;
+      transform: translateX(-50%);
+      @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+        left: 65px;
+      }
+
+      .dropdown-menu {
+        top: -80px;
+      }
+      .nav-link {
+        color: var(--primary);
+        @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+          font-size: 14px;
+          padding: 0.5rem 0.5rem;
+        }
+      }
+    }
+  }
+  svg {
+    vertical-align: text-bottom !important;
+  }
+
+
+  .b-asideMenu {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+   // right: -150%;
+    height: 100vh;
+    background-color: #d7e3f5;
+    width: 100%;
+    max-width: 275px;
+    box-shadow: 0 1px 17px rgba(0, 0, 0, 0.3);
+    transition: .6s;
+  
+    &.-open {
+      left: 0%;
+    }
+    
+    &__header {
+      height: 96px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 23px 5px 35px;
+      &Title {
+        color: #111111;
+        font-size: 24px;
+        font-weight: 400;
+      }
+      &Btn {
+        width: 42px;
+        height: 42px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+      }
+    }
+    &__closeIcon {
+      color: #899cb9;
+      font-size: 32px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .main-menu{
+    color: #000;
+  }
+}
+.sideBarOpen{
+left:0;
+}
+.navbar-light .navbar-brand {
+  color: var(--primary);
+  margin-right: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--primary);
+  font-size: 16px;
+  border-radius: 8px;
+
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    font-size: 14px;
+  }
+
+}
+
+.bottomnav_wrapper {
+  .dropdown-toggle::after {
+    content: none;
+  }
+
+  .navbar {
+    background: var(--secondary);
+    padding-bottom: 0;
+    padding-top: 0;
+    .nav-link {
+      color: var(--primary);
+      // background-color: red;
+    }
+  }
+  .active {
+    color: var(--secondary-light) !important;
+  }
+}
+.profile_link {
+  padding-right: 3.5rem;
+}
+
+.side_nav_content {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  left: 4px;
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    top: 0px;
+  }
+}
+
+.sidenav_wrapper_box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 230px;
+  height: 100vh;
+  background-color:#c1d4f1;
+  z-index: 9999;
+  transition: .4s;
+  
+  &_navbar {
+    &.navbar {
+      display: block;
+      .navbar_close {
+        color: #4d87df;
+        margin: 5px 0 10px;
+        cursor: pointer;
+      }
+      .navbar-nav {
+        flex-direction: column;
+        // .nav-link {
+        //   text-align: center;
+        // }
+      }
+      // display: flex;
+    }
+    .active {
+   background: #89acdd;;
+      color: var(--primary) !important;
+    }
+  }
+  svg {
+    vertical-align: text-bottom !important;
+  }
+
+  .other-nav{
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+     }
+  }
+}
+.sidenav_wrapper_box_open {
+  right: 0;
+}
+.sidenav_wrapper_box_close {
+  right: -230px;
+}
+
+.sidenav_wrapper_box_navbar.navbar .navbar_close
+{
+  width: 2rem;
+}

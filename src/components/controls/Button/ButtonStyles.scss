@@ -1,0 +1,73 @@
+.button_control {
+  display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    width: 100%;
+  .btn-primary.secondary {
+    border: 1px solid var(--secondary);
+    background-color: var(--secondary);
+    color: var(--primary);
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .btn-primary.primal {
+    color: var(--secondary);
+    background-color: var(--primary);
+    border: 1px solid var(--secondary);
+    &:hover {
+      color: var(--primary);
+      background-color: var(--secondary);
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .btn-primary.danger {
+    color: #fff;
+    background-color: red;
+    border: 1px solid red;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .btn-primary.danger-outline {
+    color:#0d6efd;
+    background-color: var(--primary);
+    border: 1px solid #0d6efd;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .btn-primary.small {
+    font-size: 12px;
+    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+      font-size: 10px;
+    }
+  }
+  .btn-primary.medium {
+    font-size: 14px;
+    width: 100px;
+    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+      font-size: 12px;
+    }
+  }
+  .btn-primary.large {
+    font-size: 14px;
+
+    width: 100%;
+    @media only screen and (max-width: 585px)  {
+      width: 100%;
+      
+    }
+    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+      font-size: 15px;
+      
+    }
+  }
+}
+
+.button_tooltip {
+  font-size: 12px !important;
+}

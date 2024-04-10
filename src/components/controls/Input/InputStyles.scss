@@ -1,0 +1,119 @@
+.wrapper {
+  position: relative;
+}
+
+.input {
+  display: block;
+  height: 40px; // 42px;
+  line-height: 32px;
+  font-size: 13px;
+  -webkit-appearance: none;
+  font-weight: 300;
+  width: 100%;
+  color: #070707;
+  padding: 0 10px 0 15px;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  border: solid 1px #e0e0e0;
+  background-color: var(--white);
+  outline: var(--blue-button);
+  font-family: Montserrat, sans-serif;
+
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    height: 36px;
+    line-height: 28px;
+    font-size: 11px;
+  }
+
+  // @media screen and (max-width: 575px) {
+  //   height: 36px;
+  //   line-height: 28px;
+  // }
+
+  &::placeholder {
+    color: #070707;
+    font-size: 13px !important;
+    font-weight: 300;
+    opacity: 0.5;
+    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+      font-size: 11px;
+    }
+  }
+
+  &:focus {
+    // font-size: 13px;
+    border: solid 1px var(--blue);
+  }
+
+  &_error {
+    background-color: #fff3f5;
+    border: solid 1px rgba(255, 0, 28, 0.25);
+  }
+}
+
+.disabled {
+  background-color: #eaeaea;
+}
+
+.label {
+  font-size: 13px !important;
+  margin-bottom: 3px;
+  font-weight: bold;
+  line-height: normal;
+  margin-left: 6px;
+  display: block;
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    font-size: 11px;
+  }
+}
+
+.error {
+  text-transform: none;
+  position: absolute;
+  top: calc(100% + 2px);
+  font-size: 10px;
+  color: red;
+}
+
+.isShow {
+  &Wrapper {
+    position: absolute;
+    left: 240px;
+    top: 20px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 580px) {
+      left: auto;
+      right: 10px;
+      top: auto;
+      bottom: 8px;
+    }
+  }
+
+  &Icon {
+    font-size: 20px;
+    color: #c5c5c5;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--grey);
+    }
+  }
+}
+
+.lg {
+  height: 45px; // 42px;
+  font-size: 15px;
+  @media screen and (max-width: 580px) {
+    height: 40px; // 42px;
+    font-size: 13px;
+  }
+}
+.sm {
+  width: 130px;
+}
+.xs {
+  width: 110px;
+}

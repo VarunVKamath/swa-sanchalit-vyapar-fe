@@ -1,0 +1,38 @@
+.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused),
+.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused {
+  display: block;
+  line-height: 22px;
+  font-size: 13px;
+  -webkit-appearance: none;
+  font-weight: 300;
+  width: 100%;
+  color: #070707;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  padding-left: 15px;
+  border: solid 1px #e0e0e0;
+  background-color: var(--white);
+  outline: var(--blue-button);
+  font-family: Montserrat, sans-serif;
+  box-shadow: none;
+  min-height: 80px;
+  .textarea_error {
+    background-color: #fff3f5;
+    border: solid 1px rgba(255, 0, 28, 0.25);
+  }
+  p {
+    margin: 0.2rem 0;
+    font-size: 13px;
+  }
+}
+.richeditor {
+  position: relative;
+}
+
+.richeditor.textarea_errors {
+  .ck.ck-editor__main > .ck-editor__editable:not(.ck-focused),
+  .ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused {
+    background-color: #fff3f5;
+    border: solid 1px rgba(255, 0, 28, 0.25);
+  }
+}

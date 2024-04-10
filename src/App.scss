@@ -1,0 +1,224 @@
+@import "./assets/styles/variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap');
+// @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    font-size: 14px !important;
+  }
+}
+// span {
+//   @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+//     font-size: 14px !important;
+//   }
+// }
+body {
+  // font-family: Titillium Web, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: Montserrat, sans-serif;
+  background-color: var(--bg-color);
+}
+.page_content_wrapper {
+  // margin-left: 230px;
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    // margin-left: 210px;
+  }
+}
+.padding {
+  padding-top: 70px;
+  padding-bottom: 1rem;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    padding-top: 60px;
+  }
+}
+.margin_x {
+  margin: 0 1rem;
+  @media screen and (max-width: 767px) {
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+  }
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    margin: 0 0;
+  }
+}
+
+.inputRow {
+  margin-bottom: 25px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.card {
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(196, 205, 224, 0.2) !important;
+  border-radius: 5px !important;
+}
+
+.modal-lg,
+.modal-xl {
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    max-width: 730px;
+  }
+}
+
+.bg-success-transparent {
+  background: rgba(13, 205, 148, 0.1);
+  color: #0dcd94;
+}
+.bg-warning-transparent {
+  background: rgba(13, 205, 148, 0.1);
+  color: #3366ff;
+}
+.bg-danger-transparent {
+  background: rgba(247, 40, 74, 0.1);
+  color: #f7284a;
+}
+.bg-cancel-transparent {
+  background: rgba(251, 197, 24, 0.1);
+  color: #fbc518;
+}
+.bg-hold-transparent {
+  background: rgba(153, 76, 0, 0.1);
+  color: #994c00;
+}
+
+// inprogress
+.badge-warning {
+  background-color: #fbc518;
+  color: #fff;
+}
+
+// applied
+.badge-primary {
+  background-color: #36f;
+  color: #fff;
+}
+
+// rejected
+.badge-danger {
+  background-color: #f7284a;
+  color: #fff;
+}
+
+// shortlisted
+.badge-success {
+  background-color: #0dcd94;
+  color: #fff;
+}
+
+// onhold
+.badge-hold {
+  background-color: #994c00;
+  color: #fff;
+}
+
+.badge-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.badge {
+  border-radius: 7px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 5px 12px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    font-size: 10px;
+  }
+}
+
+.react-tags__selected-tag {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 2px 4px 2px 0;
+  background-color: #eaeaea;
+  border-radius: 4px 4px 0 0;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.react-tags__selected-tag:after {
+  content: "\2715";
+  color: var(--secondary-light);
+  margin-left: 8px;
+}
+
+.react-tags__selected-tag:hover,
+.react-tags__selected-tag:focus {
+  border-color: #b1b1b1;
+}
+
+.modal-content {
+  border-radius: 0.6rem;
+}
+
+// input[type="date"]::before {
+//   content: attr(placeholder);
+//   position: absolute;
+//   color: #999999;
+// }
+
+// input[type="date"] {
+//   color: #ffffff;
+// }
+
+// input[type="date"]:focus,
+// input[type="date"]:valid {
+//   color: #666666;
+// }
+
+// input[type="date"]:focus::before,
+// input[type="date"]:valid::before {
+//   content: "";
+// }
+
+#date-popup > div {
+  position: relative !important;
+}
+
+.fc-day-sun {
+  .fc-daygrid-day-number {
+    color: red !important;
+  }
+}
+.fc-day-sat {
+  .fc-daygrid-day-number {
+    color: red !important;
+  }
+}
+
+.modal-content {
+  margin-bottom: 50px;
+}
+
+.modal-xl {
+  @media only screen and (min-width: 550px) {
+    max-width: 90%;
+  }
+}
+
+.modal-title {
+  color: var(--secondary);
+}
